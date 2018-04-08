@@ -31,7 +31,11 @@
     
 //    BOOL isValid = [self.filed.text isValidChineseStr];
 //    BOOL isValid = [self.filed.text isValidChinesePunctuationStr];
-    BOOL isValid = [self.filed.text isValidCN_CNPunctuation_Eng_EngPunctuation_NumStr];
+//    BOOL isValid = [self.filed.text isValidCN_CNPunctuation_Eng_EngPunctuation_NumStr];
+//    BOOL isValid = [self.filed.text isValidSpaceStr];
+    BOOL isValid = [self.filed.text isValidChinesePunctuationStr];
+    
+    
     if(isValid){
         
         NSLog(@"有效---%@---->",self.filed.text);

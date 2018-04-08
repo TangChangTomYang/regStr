@@ -26,7 +26,16 @@
 }
 
 
+
 #pragma mark- 外部方法
+
+/** 空格*/
+-(BOOL)isValidSpaceStr{
+    NSString *regStr = @"^(\\s)+$";
+    return   [self isValidForRegStr:regStr];
+}
+
+
 /** 中文汉字 + 数字*/
 -(BOOL)isValidChineseStr{
     NSString *regStr = @"^([\u4e00-\u9fa5]|[0-9])+$";
@@ -35,8 +44,10 @@
 
 /** 中文标点符号 */
 -(BOOL)isValidChinesePunctuationStr{
-    //该表达式可以识别出： 。 ；  ， ： “ ”（ ） 、 ？ 《 》 这些标点符号。
-    NSString *regStr = @"^([\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b])+$";
+   
+    // \\% 表示的是 % 符号
+    NSString *regStr = @"^([\\&\\|\\\\\%\\{\\}\\（\\）\\《\\》\\：\\；\\、\\，\\。\\？\\“\\”\\<\\>\\！\\【\\】\\-\\/\\￥\\~\\#\\$\\……\\^\\@\\*\\_\\+\\=])+$";
+
     return   [self isValidForRegStr:regStr];
 }
 
@@ -94,6 +105,8 @@
 -(BOOL)isValidCN_CNPunctuation_Eng_EngPunctuation_NumStr{
     
     NSString *regStr = @"^([\u4e00-\u9fa5]|[0-9]|[\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]|[a-zA-Z]|[0-9]|['\"{}\\(\\)\\[\\]\\*&.?!,…:;])+$";
+    
+   
     return   [self isValidForRegStr:regStr];
     
 }

@@ -10,6 +10,8 @@
 
 @interface NSString (regStr)
 
+/** 匹配空格*/
+-(BOOL)isValidSpaceStr;
 
 /** 中文汉字 + 数字*/
 -(BOOL)isValidChineseStr;
