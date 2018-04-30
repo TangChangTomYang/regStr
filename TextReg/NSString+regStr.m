@@ -32,6 +32,7 @@
 /** 空格*/
 -(BOOL)isValidSpaceStr{
     NSString *regStr = @"^(\\s)+$";
+    
     return   [self isValidForRegStr:regStr];
 }
 

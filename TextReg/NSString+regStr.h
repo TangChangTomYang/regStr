@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "TextReg-Swift.h"
 
 @interface NSString (regStr)
 
