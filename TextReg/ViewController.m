@@ -45,19 +45,15 @@
 
 -(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
     
-    NSString *rawStr = @"asdfghjkl;qwertyuiop";
-    NSString *pattern = @"";
-    
-    /**
-     练习1： 匹配，abc
-     练习1： 匹配，包含一个a~z，后面必须是0~9--> [a-z][0-9] 或者[a-z]\d
-     练习1： 匹配，必须第一个是字母，第二个是数字--> ^[a-z][0-9]$ 或者 ^[a-z]\d$
-     练习1： 匹配，必须第一个是字母，字母后面跟4~9个数字--> ^[a-z][0-9]{4,9}$或者^[a-z]\d{4,9}$
-     练习1： 匹配，不能是数字0~9 -->
-     练习1： 匹配，QQ (5-12位数字)匹配-->^[1-9][0-9]{4,11}$ 或者 ^[1-9]\d{4,11}$
-     练习1： 匹配，手机，以 13、15、17、18 打头 --> ^1[3578][0-9]{9}$
+
+    /** 表情  [吃惊] [好爱哦]
      */
+    NSString *rawStr = @"@zhangsan:【成都新闻】 #春熙路#宁夏街[偷笑]，@张老五：老西门，城东们[吃惊]@西门吹雪：皮读取#碧波园#白桥[好爱哦]~~~http://baidu.com.news";
+    NSString *pattern = @"\\[.*?\\]";
+ 
+ 
     
+    /** 匹配字符串 */
     NSArray *subStrArr = [rawStr subStringArrWithPattern:pattern];
    
     if (subStrArr.count > 0) {
@@ -68,9 +64,21 @@
         }
     }
     else{
-        
         NSLog(@"-------匹配 失败了--------");
     }
+    
+     /** 匹配字符串 range*/
+    NSArray *rangArr = [rawStr subStringRangeArrWithPattern:pattern];
+    
+    if (rangArr.count > 0) {
+        for (NSString *rangStr in rangArr) {
+            NSLog(@"rangStr:%@",rangStr);
+        }
+    }
+    else{
+        NSLog(@"---rangStr----匹配 失败了--------");
+    }
+    
     
 }
 

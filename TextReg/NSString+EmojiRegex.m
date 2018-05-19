@@ -50,9 +50,13 @@
     NSMutableArray *rangeStrArrM = [NSMutableArray array];
     for (NSTextCheckingResult *result in resultArr) {
         NSRange range = [result range];
-        [rangeStrArrM addObject:NSStringFromRange(range)];
+        
+        NSString *rangStr = NSStringFromRange(range);
+        [rangeStrArrM addObject:rangStr];
         
     }
     return rangeStrArrM;
 }
+
+
 @end
