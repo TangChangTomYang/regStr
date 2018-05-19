@@ -8,22 +8,38 @@
 
 #import <Foundation/Foundation.h>
 
+
+
+#define  ksubRange  @"ksubRange"    // 通过 ksubRange 获取NSRange
+#define  ksubStr    @"ksubStr"      // 通过 ksubStr 获取NSRange 对应的子串
 @interface NSString (EmojiRegex)
 
 
 
 
-/** 给定字符串和正则表达式，匹配出所有满足条件的字符串
- 返回值： 满足 正则表达式样式的 subString 的NSArray
+/**
  参数：regPattern 正则表达式的样式
+ 返回值： 满足 正则表达式样式的 subString
  */
--(NSArray<NSString *> *)subStringArrWithPattern:(NSString *)regPattern;
+-(NSMutableArray<NSString *> *)subStringArrWithPattern:(NSString *)regPattern;
 
-/** 给定字符串和正则表达式，匹配出所有满足条件的字符串的位置字符串
- 返回值： 满足 正则表达式样式的 subString 的NSRange
+/**
  参数：regPattern 正则表达式的样式
+ 返回值： 满足 正则表达式样式的 subString 的NSRange
  */
--(NSArray<NSString *> *)subStringRangeArrWithPattern:(NSString *)regPattern;
+-(NSMutableArray<NSString *> *)subRangeArrWithPattern:(NSString *)regPattern;
+
+/**
+ 参数：regPattern 正则表达式的样式
+ 返回值： 满足 正则表达式样式的  NSRange NSString 字典数组 
+ */
+-(NSMutableArray<NSDictionary *> *)subDicArrWithPattern:(NSString *)regPattern;
+
+
+
+
+
+
 
 
 /**

@@ -68,7 +68,7 @@
     }
     
      /** 匹配字符串 range*/
-    NSArray *rangArr = [rawStr subStringRangeArrWithPattern:pattern];
+    NSArray *rangArr = [rawStr subRangeArrWithPattern:pattern];
     
     if (rangArr.count > 0) {
         for (NSString *rangStr in rangArr) {
@@ -80,8 +80,8 @@
     }
     
     
+    UITableView;
     
-    rawStr repla
 }
 
 

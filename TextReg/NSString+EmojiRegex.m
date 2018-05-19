@@ -11,30 +11,38 @@
 @implementation NSString (EmojiRegex)
 
 
-/** 给定字符串和正则表达式，匹配出所有满足条件的字符串
- 返回值： 满足 正则表达式样式的 subString 的NSArray
- 参数：regPattern 正则表达式的样式
- */
--(NSArray<NSString *> *)subStringArrWithPattern:(NSString *)regPattern{
-    
-    NSArray *rangeStrArr = [self subStringRangeArrWithPattern:regPattern];;
 
-    NSMutableArray *patternStrArrM = [NSMutableArray array];
-    for (NSString *rangeStr in rangeStrArr) {
+
+
+
+
+/**
+ 参数：regPattern 正则表达式的样式
+ 返回值： 满足 正则表达式样式的 subString
+ */
+-(NSMutableArray<NSString *> *)subStringArrWithPattern:(NSString *)regPattern{
+    
+    NSArray *rangeArr = [self subRangeArrWithPattern:regPattern];;
+
+    if (rangeArr.count == 0) {
+        return nil;
+    }
+    
+    NSMutableArray *strArrM = [NSMutableArray array];
+    for (NSString *rangeStr in rangeArr) {
         NSRange range = NSRangeFromString(rangeStr);
         NSString *str = [self substringWithRange:range];
-        [patternStrArrM addObject:str];
+        [strArrM addObject:str];
     }
 
-
-    return patternStrArrM;
+    return strArrM;
 }
 
-/** 给定字符串和正则表达式，匹配出所有满足条件的字符串的位置字符串
- 返回值： 满足 正则表达式样式的 subString 的NSRange
+/**
  参数：regPattern 正则表达式的样式
+ 返回值： 满足 正则表达式样式的 subString 的NSRange
  */
--(NSArray<NSString *> *)subStringRangeArrWithPattern:(NSString *)regPattern{
+-(NSMutableArray<NSString *> *)subRangeArrWithPattern:(NSString *)regPattern{
     
     NSError *err = nil;
     NSRegularExpression *regExp = [[NSRegularExpression alloc]initWithPattern:regPattern options:kNilOptions error:&err];
@@ -47,15 +55,51 @@
     
     NSArray<NSTextCheckingResult *> *resultArr= [regExp matchesInString:self options:kNilOptions range:NSMakeRange(0, self.length)];
     
-    NSMutableArray *rangeStrArrM = [NSMutableArray array];
+    if (resultArr.count == 0) {
+        return nil;
+    }
+    
+    NSMutableArray *rangeArr = [NSMutableArray array];
     for (NSTextCheckingResult *result in resultArr) {
         NSRange range = [result range];
         
         NSString *rangStr = NSStringFromRange(range);
-        [rangeStrArrM addObject:rangStr];
+        [rangeArr addObject:rangStr];
         
     }
-    return rangeStrArrM;
+    return rangeArr;
+}
+
+
+/**
+ 参数：regPattern 正则表达式的样式
+ 返回值： 满足 正则表达式样式的  NSRange NSString 字典数组
+ */
+-(NSMutableArray<NSDictionary *> *)subDicArrWithPattern:(NSString *)regPattern{
+    NSError *err = nil;
+    NSRegularExpression *regExp = [[NSRegularExpression alloc]initWithPattern:regPattern options:kNilOptions error:&err];
+    
+    if (err != nil) {
+        NSLog(@"创建正则表达式失败");
+        return nil;
+    }
+    
+    
+    NSArray<NSTextCheckingResult *> *resultArr= [regExp matchesInString:self options:kNilOptions range:NSMakeRange(0, self.length)];
+    if (resultArr.count == 0) {
+        return nil;
+    }
+    
+    NSMutableArray *dicArrM = [NSMutableArray array];
+    for (NSTextCheckingResult *result in resultArr) {
+        NSRange range = [result range];
+        
+        [dicArrM addObject:@{ksubRange:NSStringFromRange(range),
+                             ksubStr:[self substringWithRange:range] }];
+        
+    }
+    
+    return dicArrM;
 }
 
 

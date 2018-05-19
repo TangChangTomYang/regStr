@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2F1F557D20AF264B0089BA16 /* NSString+EmojiRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */; };
+		2FE590C420AFD5FD00650FC5 /* NSString+Emoji.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE590C320AFD5FD00650FC5 /* NSString+Emoji.m */; };
+		2FE590C720AFDDCE00650FC5 /* YREmojiStringTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE590C620AFDDCE00650FC5 /* YREmojiStringTool.m */; };
 		2FEAE81C2071F56F00511373 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE81B2071F56F00511373 /* AppDelegate.m */; };
 		2FEAE81F2071F56F00511373 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE81E2071F56F00511373 /* ViewController.m */; };
 		2FEAE8222071F56F00511373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAE8202071F56F00511373 /* Main.storyboard */; };
@@ -21,6 +23,10 @@
 /* Begin PBXFileReference section */
 		2F1F557B20AF264B0089BA16 /* NSString+EmojiRegex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EmojiRegex.h"; sourceTree = "<group>"; };
 		2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmojiRegex.m"; sourceTree = "<group>"; };
+		2FE590C220AFD5FD00650FC5 /* NSString+Emoji.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Emoji.h"; sourceTree = "<group>"; };
+		2FE590C320AFD5FD00650FC5 /* NSString+Emoji.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Emoji.m"; sourceTree = "<group>"; };
+		2FE590C520AFDDCE00650FC5 /* YREmojiStringTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YREmojiStringTool.h; sourceTree = "<group>"; };
+		2FE590C620AFDDCE00650FC5 /* YREmojiStringTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YREmojiStringTool.m; sourceTree = "<group>"; };
 		2FEAE8172071F56F00511373 /* TextReg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextReg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEAE81A2071F56F00511373 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FEAE81B2071F56F00511373 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -53,6 +59,10 @@
 			children = (
 				2F1F557B20AF264B0089BA16 /* NSString+EmojiRegex.h */,
 				2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */,
+				2FE590C220AFD5FD00650FC5 /* NSString+Emoji.h */,
+				2FE590C320AFD5FD00650FC5 /* NSString+Emoji.m */,
+				2FE590C520AFDDCE00650FC5 /* YREmojiStringTool.h */,
+				2FE590C620AFDDCE00650FC5 /* YREmojiStringTool.m */,
 			);
 			name = "正则匹配表情";
 			sourceTree = "<group>";
@@ -176,6 +186,8 @@
 			files = (
 				2FEAE81F2071F56F00511373 /* ViewController.m in Sources */,
 				2FF63A992097214A00ADB2F1 /* MyRegex.swift in Sources */,
+				2FE590C720AFDDCE00650FC5 /* YREmojiStringTool.m in Sources */,
+				2FE590C420AFD5FD00650FC5 /* NSString+Emoji.m in Sources */,
 				2FEAE8352071F99300511373 /* NSString+regStr.m in Sources */,
 				2FEAE82A2071F56F00511373 /* main.m in Sources */,
 				2F1F557D20AF264B0089BA16 /* NSString+EmojiRegex.m in Sources */,
