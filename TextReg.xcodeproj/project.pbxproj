@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F1F557A20AF1FEB0089BA16 /* EmojiReg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F557920AF1FEB0089BA16 /* EmojiReg.m */; };
 		2F1F557D20AF264B0089BA16 /* NSString+EmojiRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */; };
 		2FEAE81C2071F56F00511373 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE81B2071F56F00511373 /* AppDelegate.m */; };
 		2FEAE81F2071F56F00511373 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE81E2071F56F00511373 /* ViewController.m */; };
@@ -20,8 +19,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F1F557820AF1FEB0089BA16 /* EmojiReg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EmojiReg.h; sourceTree = "<group>"; };
-		2F1F557920AF1FEB0089BA16 /* EmojiReg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EmojiReg.m; sourceTree = "<group>"; };
 		2F1F557B20AF264B0089BA16 /* NSString+EmojiRegex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EmojiRegex.h"; sourceTree = "<group>"; };
 		2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmojiRegex.m"; sourceTree = "<group>"; };
 		2FEAE8172071F56F00511373 /* TextReg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextReg.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,8 +51,6 @@
 		2F1F557720AF1FB00089BA16 /* 正则匹配表情 */ = {
 			isa = PBXGroup;
 			children = (
-				2F1F557820AF1FEB0089BA16 /* EmojiReg.h */,
-				2F1F557920AF1FEB0089BA16 /* EmojiReg.m */,
 				2F1F557B20AF264B0089BA16 /* NSString+EmojiRegex.h */,
 				2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */,
 			);
@@ -180,7 +175,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				2FEAE81F2071F56F00511373 /* ViewController.m in Sources */,
-				2F1F557A20AF1FEB0089BA16 /* EmojiReg.m in Sources */,
 				2FF63A992097214A00ADB2F1 /* MyRegex.swift in Sources */,
 				2FEAE8352071F99300511373 /* NSString+regStr.m in Sources */,
 				2FEAE82A2071F56F00511373 /* main.m in Sources */,
