@@ -1,18 +1,14 @@
 //
-//  NSString+EmojiRegex.m
+//  NSString+reg.m
 //  TextReg
 //
-//  Created by yangrui on 2018/5/18.
+//  Created by yangrui on 2018/5/20.
 //  Copyright © 2018年 yangrui. All rights reserved.
 //
 
-#import "NSString+EmojiRegex.h"
+#import "NSString+reg.h"
 
-@implementation NSString (EmojiRegex)
-
-
-
-
+@implementation NSString (reg)
 
 
 
@@ -23,7 +19,7 @@
 -(NSMutableArray<NSString *> *)subStringArrWithPattern:(NSString *)regPattern{
     
     NSArray *rangeArr = [self subRangeArrWithPattern:regPattern];;
-
+    
     if (rangeArr.count == 0) {
         return nil;
     }
@@ -34,7 +30,7 @@
         NSString *str = [self substringWithRange:range];
         [strArrM addObject:str];
     }
-
+    
     return strArrM;
 }
 
@@ -101,6 +97,7 @@
     
     return dicArrM;
 }
+
 
 
 @end

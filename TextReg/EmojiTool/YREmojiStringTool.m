@@ -7,7 +7,7 @@
 //
 
 #import "YREmojiStringTool.h"
-#import "NSString+EmojiRegex.h"
+#import "NSString+reg.h"
 
 YREmojiStringTool *_emoiTool = nil;
 @implementation YREmojiStringTool

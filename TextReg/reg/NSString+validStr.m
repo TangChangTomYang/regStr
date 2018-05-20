@@ -1,14 +1,15 @@
 //
-//  NSString+regStr.m
+//  NSString+validStr.m
 //  TextReg
 //
-//  Created by yangrui on 2018/4/2.
+//  Created by yangrui on 2018/5/20.
 //  Copyright © 2018年 yangrui. All rights reserved.
 //
 
-#import "NSString+regStr.h"
+#import "NSString+validStr.h"
 
-@implementation NSString (regStr)
+@implementation NSString (validStr)
+
 
 /**
  ^表示匹配字符开始位置,匹配输入字行首
@@ -45,10 +46,10 @@
 
 /** 中文标点符号 */
 -(BOOL)isValidChinesePunctuationStr{
-   
+    
     // \\% 表示的是 % 符号
     NSString *regStr = @"^([\\&\\|\\\\\%\\{\\}\\（\\）\\《\\》\\：\\；\\、\\，\\。\\？\\“\\”\\<\\>\\！\\【\\】\\-\\/\\￥\\~\\#\\$\\……\\^\\@\\*\\_\\+\\=])+$";
-
+    
     return   [self isValidForRegStr:regStr];
 }
 
@@ -67,7 +68,7 @@
     
     NSString *regStr = @"^([a-zA-Z]|[0-9])+$";
     
-  return   [self isValidForRegStr:regStr];
+    return   [self isValidForRegStr:regStr];
     
 }
 
@@ -107,28 +108,9 @@
     
     NSString *regStr = @"^([\u4e00-\u9fa5]|[0-9]|[\u3002\uff1b\uff0c\uff1a\u201c\u201d\uff08\uff09\u3001\uff1f\u300a\u300b]|[a-zA-Z]|[0-9]|['\"{}\\(\\)\\[\\]\\*&.?!,…:;])+$";
     
-   
+    
     return   [self isValidForRegStr:regStr];
     
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

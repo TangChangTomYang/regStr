@@ -7,9 +7,11 @@
 //
 
 #import "ViewController.h"
-#import "NSString+regStr.h"
+#import "NSString+reg.h"
+#import "NSString+sysReg.h"
+#import "NSString+validStr.h"
 
-#import "NSString+EmojiRegex.h"
+
 
 @interface ViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *filed;
@@ -17,6 +19,43 @@
 @end
 
 @implementation ViewController
+
+- (IBAction)validStrBtnClick:(id)sender {
+    
+    /** 表情  [吃惊] [好爱哦]
+     */
+    NSString *rawStr = @"@zhangsan:【成都新闻】 #春熙路#宁夏街[偷笑]，@张老五：老西门，城东们[吃惊]@西门吹雪：皮读取#碧波园#白桥[好爱哦]~~~http://baidu.com.news";
+    NSString *pattern = @"\\[.*?\\]";
+    
+    
+    
+    /** 匹配字符串 */
+    NSArray *subStrArr = [rawStr subStringArrWithPattern:pattern];
+    
+    if (subStrArr.count > 0) {
+        NSLog(@"匹配结果如下：");
+        
+        for (NSString *subStr in subStrArr) {
+            NSLog(@"%@",subStr);
+        }
+    }
+    else{
+        NSLog(@"-------匹配 失败了--------");
+    }
+    
+    /** 匹配字符串 range*/
+    NSArray *rangArr = [rawStr subRangeArrWithPattern:pattern];
+    
+    if (rangArr.count > 0) {
+        for (NSString *rangStr in rangArr) {
+            NSLog(@"rangStr:%@",rangStr);
+        }
+    }
+    else{
+        NSLog(@"---rangStr----匹配 失败了--------");
+    }
+}
+
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,46 +82,6 @@
 }
 
 
--(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
-    
-
-    /** 表情  [吃惊] [好爱哦]
-     */
-    NSString *rawStr = @"@zhangsan:【成都新闻】 #春熙路#宁夏街[偷笑]，@张老五：老西门，城东们[吃惊]@西门吹雪：皮读取#碧波园#白桥[好爱哦]~~~http://baidu.com.news";
-    NSString *pattern = @"\\[.*?\\]";
- 
- 
-    
-    /** 匹配字符串 */
-    NSArray *subStrArr = [rawStr subStringArrWithPattern:pattern];
-   
-    if (subStrArr.count > 0) {
-        NSLog(@"匹配结果如下：");
-    
-        for (NSString *subStr in subStrArr) {
-            NSLog(@"%@",subStr);
-        }
-    }
-    else{
-        NSLog(@"-------匹配 失败了--------");
-    }
-    
-     /** 匹配字符串 range*/
-    NSArray *rangArr = [rawStr subRangeArrWithPattern:pattern];
-    
-    if (rangArr.count > 0) {
-        for (NSString *rangStr in rangArr) {
-            NSLog(@"rangStr:%@",rangStr);
-        }
-    }
-    else{
-        NSLog(@"---rangStr----匹配 失败了--------");
-    }
-    
-    
-    UITableView;
-    
-}
 
 
 @end

@@ -7,23 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2F1F557D20AF264B0089BA16 /* NSString+EmojiRegex.m in Sources */ = {isa = PBXBuildFile; fileRef = 2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */; };
-		2FE590C720AFDDCE00650FC5 /* YREmojiStringTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FE590C620AFDDCE00650FC5 /* YREmojiStringTool.m */; };
+		2FCFD21020B10B0900F94EC5 /* ViewController+reg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD20F20B10B0900F94EC5 /* ViewController+reg.m */; };
+		2FCFD21320B10B1900F94EC5 /* ViewController+sysReg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21220B10B1900F94EC5 /* ViewController+sysReg.m */; };
+		2FCFD21B20B10DD700F94EC5 /* NSString+reg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21620B10DD700F94EC5 /* NSString+reg.m */; };
+		2FCFD21C20B10DD700F94EC5 /* NSString+sysReg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21820B10DD700F94EC5 /* NSString+sysReg.m */; };
+		2FCFD21D20B10DD700F94EC5 /* NSString+validStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21A20B10DD700F94EC5 /* NSString+validStr.m */; };
+		2FCFD22120B10E2C00F94EC5 /* YREmojiStringTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD22020B10E2B00F94EC5 /* YREmojiStringTool.m */; };
 		2FEAE81C2071F56F00511373 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE81B2071F56F00511373 /* AppDelegate.m */; };
 		2FEAE81F2071F56F00511373 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE81E2071F56F00511373 /* ViewController.m */; };
 		2FEAE8222071F56F00511373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAE8202071F56F00511373 /* Main.storyboard */; };
 		2FEAE8242071F56F00511373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAE8232071F56F00511373 /* Assets.xcassets */; };
 		2FEAE8272071F56F00511373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAE8252071F56F00511373 /* LaunchScreen.storyboard */; };
 		2FEAE82A2071F56F00511373 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE8292071F56F00511373 /* main.m */; };
-		2FEAE8352071F99300511373 /* NSString+regStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE8342071F99300511373 /* NSString+regStr.m */; };
 		2FF63A992097214A00ADB2F1 /* MyRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF63A982097214A00ADB2F1 /* MyRegex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2F1F557B20AF264B0089BA16 /* NSString+EmojiRegex.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+EmojiRegex.h"; sourceTree = "<group>"; };
-		2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+EmojiRegex.m"; sourceTree = "<group>"; };
-		2FE590C520AFDDCE00650FC5 /* YREmojiStringTool.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YREmojiStringTool.h; sourceTree = "<group>"; };
-		2FE590C620AFDDCE00650FC5 /* YREmojiStringTool.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YREmojiStringTool.m; sourceTree = "<group>"; };
+		2FCFD20E20B10B0900F94EC5 /* ViewController+reg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+reg.h"; sourceTree = "<group>"; };
+		2FCFD20F20B10B0900F94EC5 /* ViewController+reg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+reg.m"; sourceTree = "<group>"; };
+		2FCFD21120B10B1900F94EC5 /* ViewController+sysReg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+sysReg.h"; sourceTree = "<group>"; };
+		2FCFD21220B10B1900F94EC5 /* ViewController+sysReg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+sysReg.m"; sourceTree = "<group>"; };
+		2FCFD21520B10DD700F94EC5 /* NSString+reg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+reg.h"; sourceTree = "<group>"; };
+		2FCFD21620B10DD700F94EC5 /* NSString+reg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+reg.m"; sourceTree = "<group>"; };
+		2FCFD21720B10DD700F94EC5 /* NSString+sysReg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+sysReg.h"; sourceTree = "<group>"; };
+		2FCFD21820B10DD700F94EC5 /* NSString+sysReg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+sysReg.m"; sourceTree = "<group>"; };
+		2FCFD21920B10DD700F94EC5 /* NSString+validStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+validStr.h"; sourceTree = "<group>"; };
+		2FCFD21A20B10DD700F94EC5 /* NSString+validStr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+validStr.m"; sourceTree = "<group>"; };
+		2FCFD21F20B10E2B00F94EC5 /* YREmojiStringTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YREmojiStringTool.h; sourceTree = "<group>"; };
+		2FCFD22020B10E2B00F94EC5 /* YREmojiStringTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YREmojiStringTool.m; sourceTree = "<group>"; };
 		2FEAE8172071F56F00511373 /* TextReg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextReg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEAE81A2071F56F00511373 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FEAE81B2071F56F00511373 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -34,8 +45,6 @@
 		2FEAE8262071F56F00511373 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2FEAE8282071F56F00511373 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2FEAE8292071F56F00511373 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		2FEAE8332071F99300511373 /* NSString+regStr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+regStr.h"; sourceTree = "<group>"; };
-		2FEAE8342071F99300511373 /* NSString+regStr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+regStr.m"; sourceTree = "<group>"; };
 		2FF63A972097214900ADB2F1 /* TextReg-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TextReg-Bridging-Header.h"; sourceTree = "<group>"; };
 		2FF63A982097214A00ADB2F1 /* MyRegex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyRegex.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -51,15 +60,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2F1F557720AF1FB00089BA16 /* 正则匹配表情 */ = {
+		2FCFD21420B10DD700F94EC5 /* reg */ = {
 			isa = PBXGroup;
 			children = (
-				2F1F557B20AF264B0089BA16 /* NSString+EmojiRegex.h */,
-				2F1F557C20AF264B0089BA16 /* NSString+EmojiRegex.m */,
-				2FE590C520AFDDCE00650FC5 /* YREmojiStringTool.h */,
-				2FE590C620AFDDCE00650FC5 /* YREmojiStringTool.m */,
+				2FCFD21520B10DD700F94EC5 /* NSString+reg.h */,
+				2FCFD21620B10DD700F94EC5 /* NSString+reg.m */,
+				2FCFD21720B10DD700F94EC5 /* NSString+sysReg.h */,
+				2FCFD21820B10DD700F94EC5 /* NSString+sysReg.m */,
+				2FCFD21920B10DD700F94EC5 /* NSString+validStr.h */,
+				2FCFD21A20B10DD700F94EC5 /* NSString+validStr.m */,
 			);
-			name = "正则匹配表情";
+			path = reg;
+			sourceTree = "<group>";
+		};
+		2FCFD21E20B10E2B00F94EC5 /* EmojiTool */ = {
+			isa = PBXGroup;
+			children = (
+				2FCFD21F20B10E2B00F94EC5 /* YREmojiStringTool.h */,
+				2FCFD22020B10E2B00F94EC5 /* YREmojiStringTool.m */,
+			);
+			path = EmojiTool;
 			sourceTree = "<group>";
 		};
 		2FEAE80E2071F56F00511373 = {
@@ -83,12 +103,15 @@
 			children = (
 				2FEAE81A2071F56F00511373 /* AppDelegate.h */,
 				2FEAE81B2071F56F00511373 /* AppDelegate.m */,
-				2FEAE8332071F99300511373 /* NSString+regStr.h */,
-				2FEAE8342071F99300511373 /* NSString+regStr.m */,
+				2FCFD21E20B10E2B00F94EC5 /* EmojiTool */,
+				2FCFD21420B10DD700F94EC5 /* reg */,
 				2FF63A9A2097217800ADB2F1 /* 正则入门思想 */,
-				2F1F557720AF1FB00089BA16 /* 正则匹配表情 */,
 				2FEAE81D2071F56F00511373 /* ViewController.h */,
 				2FEAE81E2071F56F00511373 /* ViewController.m */,
+				2FCFD20E20B10B0900F94EC5 /* ViewController+reg.h */,
+				2FCFD20F20B10B0900F94EC5 /* ViewController+reg.m */,
+				2FCFD21120B10B1900F94EC5 /* ViewController+sysReg.h */,
+				2FCFD21220B10B1900F94EC5 /* ViewController+sysReg.m */,
 				2FEAE8202071F56F00511373 /* Main.storyboard */,
 				2FEAE8232071F56F00511373 /* Assets.xcassets */,
 				2FEAE8252071F56F00511373 /* LaunchScreen.storyboard */,
@@ -179,13 +202,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCFD22120B10E2C00F94EC5 /* YREmojiStringTool.m in Sources */,
+				2FCFD21B20B10DD700F94EC5 /* NSString+reg.m in Sources */,
+				2FCFD21320B10B1900F94EC5 /* ViewController+sysReg.m in Sources */,
 				2FEAE81F2071F56F00511373 /* ViewController.m in Sources */,
 				2FF63A992097214A00ADB2F1 /* MyRegex.swift in Sources */,
-				2FE590C720AFDDCE00650FC5 /* YREmojiStringTool.m in Sources */,
-				2FEAE8352071F99300511373 /* NSString+regStr.m in Sources */,
+				2FCFD21C20B10DD700F94EC5 /* NSString+sysReg.m in Sources */,
 				2FEAE82A2071F56F00511373 /* main.m in Sources */,
-				2F1F557D20AF264B0089BA16 /* NSString+EmojiRegex.m in Sources */,
+				2FCFD21D20B10DD700F94EC5 /* NSString+validStr.m in Sources */,
 				2FEAE81C2071F56F00511373 /* AppDelegate.m in Sources */,
+				2FCFD21020B10B0900F94EC5 /* ViewController+reg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

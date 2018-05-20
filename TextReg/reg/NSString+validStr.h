@@ -1,15 +1,14 @@
 //
-//  NSString+regStr.h
+//  NSString+validStr.h
 //  TextReg
 //
-//  Created by yangrui on 2018/4/2.
+//  Created by yangrui on 2018/5/20.
 //  Copyright © 2018年 yangrui. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-#import "TextReg-Swift.h"
 
-@interface NSString (regStr)
+@interface NSString (validStr)
 
 /** 匹配空格*/
 -(BOOL)isValidSpaceStr;

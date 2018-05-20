@@ -1,20 +1,15 @@
 //
-//  NSString+EmojiRegex.h
+//  NSString+reg.h
 //  TextReg
 //
-//  Created by yangrui on 2018/5/18.
+//  Created by yangrui on 2018/5/20.
 //  Copyright © 2018年 yangrui. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
-
-
-
 #define  ksubRange  @"ksubRange"    // 通过 ksubRange 获取NSRange
 #define  ksubStr    @"ksubStr"      // 通过 ksubStr 获取NSRange 对应的子串
-@interface NSString (EmojiRegex)
-
-
+@interface NSString (reg)
 
 
 /**
@@ -31,7 +26,7 @@
 
 /**
  参数：regPattern 正则表达式的样式
- 返回值： 满足 正则表达式样式的  NSRange NSString 字典数组 
+ 返回值： 满足 正则表达式样式的  NSRange NSString 字典数组
  */
 -(NSMutableArray<NSDictionary *> *)subDicArrWithPattern:(NSString *)regPattern;
 
@@ -88,5 +83,6 @@
  
  练习9：urL正则表达式, @"http(s)?://([\w-]+\.)+[\w-]+(/[\w-./?%&=]*)?"
  */
-    
+
+
 @end
