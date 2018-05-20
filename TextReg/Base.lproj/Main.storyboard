@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Kk-Se-abw">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -52,17 +52,81 @@
                                     <action selector="regBtnClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ydu-sK-yJb"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CFb-yi-vSx">
+                                <rect key="frame" x="122" y="383" width="92" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <state key="normal" title="局部文本点击"/>
+                                <connections>
+                                    <segue destination="ryf-vq-RQ3" kind="show" id="id7-ms-1dR"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.46520647320000003" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="qNk-12-FyQ"/>
                     <connections>
                         <outlet property="filed" destination="hzs-3v-oXz" id="pLb-S5-RFe"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-263.19999999999999" y="187.55622188905548"/>
+            <point key="canvasLocation" x="4" y="181"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="3su-m7-SJ5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="3Kk-Se-abw" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tPM-bv-bbt">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="YmQ-i3-xaO"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BcF-5t-798" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-660" y="181"/>
+        </scene>
+        <!--Label View Controller-->
+        <scene sceneID="TMP-GA-bmi">
+            <objects>
+                <viewController id="ryf-vq-RQ3" customClass="YRLabelViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8og-BT-2ck"/>
+                        <viewControllerLayoutGuide type="bottom" id="fac-5z-GeP"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zx4-Gy-nOv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="#YRabale# 用于匹配字符串中的内容显示 请关注:https://www.baidu.com  作者:@Topyang" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9aZ-Kr-Vra" customClass="YRLabel">
+                                <rect key="frame" x="40" y="104" width="295" height="54"/>
+                                <color key="backgroundColor" red="0.98039215690000003" green="0.90196078430000004" blue="0.90196078430000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9aZ-Kr-Vra" firstAttribute="top" secondItem="8og-BT-2ck" secondAttribute="bottom" constant="40" id="Vxv-5g-t3A"/>
+                            <constraint firstItem="9aZ-Kr-Vra" firstAttribute="leading" secondItem="zx4-Gy-nOv" secondAttribute="leading" constant="40" id="lxE-I0-3L3"/>
+                            <constraint firstAttribute="trailing" secondItem="9aZ-Kr-Vra" secondAttribute="trailing" constant="40" id="oEC-Pa-ari"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="hZw-LI-jKp"/>
+                    </view>
+                    <connections>
+                        <outlet property="demoLabel" destination="9aZ-Kr-Vra" id="l0u-cn-usC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sjf-Wt-6vk" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="698" y="170"/>
         </scene>
     </scenes>
 </document>

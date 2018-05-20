@@ -13,6 +13,8 @@
 		2FCFD21C20B10DD700F94EC5 /* NSString+sysReg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21820B10DD700F94EC5 /* NSString+sysReg.m */; };
 		2FCFD21D20B10DD700F94EC5 /* NSString+validStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21A20B10DD700F94EC5 /* NSString+validStr.m */; };
 		2FCFD22120B10E2C00F94EC5 /* YREmojiStringTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD22020B10E2B00F94EC5 /* YREmojiStringTool.m */; };
+		2FCFD23420B1638700F94EC5 /* YRLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD23120B1638700F94EC5 /* YRLabel.m */; };
+		2FCFD23520B1638700F94EC5 /* YRLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD23320B1638700F94EC5 /* YRLabelViewController.m */; };
 		2FEAE81C2071F56F00511373 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE81B2071F56F00511373 /* AppDelegate.m */; };
 		2FEAE81F2071F56F00511373 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE81E2071F56F00511373 /* ViewController.m */; };
 		2FEAE8222071F56F00511373 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAE8202071F56F00511373 /* Main.storyboard */; };
@@ -35,6 +37,10 @@
 		2FCFD21A20B10DD700F94EC5 /* NSString+validStr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+validStr.m"; sourceTree = "<group>"; };
 		2FCFD21F20B10E2B00F94EC5 /* YREmojiStringTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YREmojiStringTool.h; sourceTree = "<group>"; };
 		2FCFD22020B10E2B00F94EC5 /* YREmojiStringTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YREmojiStringTool.m; sourceTree = "<group>"; };
+		2FCFD23020B1638700F94EC5 /* YRLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRLabel.h; sourceTree = "<group>"; };
+		2FCFD23120B1638700F94EC5 /* YRLabel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRLabel.m; sourceTree = "<group>"; };
+		2FCFD23220B1638700F94EC5 /* YRLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRLabelViewController.h; sourceTree = "<group>"; };
+		2FCFD23320B1638700F94EC5 /* YRLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRLabelViewController.m; sourceTree = "<group>"; };
 		2FEAE8172071F56F00511373 /* TextReg.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextReg.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2FEAE81A2071F56F00511373 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		2FEAE81B2071F56F00511373 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -60,7 +66,7 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2FCFD21420B10DD700F94EC5 /* reg */ = {
+		2FCFD21420B10DD700F94EC5 /* 正则表达式分类 */ = {
 			isa = PBXGroup;
 			children = (
 				2FCFD21520B10DD700F94EC5 /* NSString+reg.h */,
@@ -70,16 +76,27 @@
 				2FCFD21920B10DD700F94EC5 /* NSString+validStr.h */,
 				2FCFD21A20B10DD700F94EC5 /* NSString+validStr.m */,
 			);
-			path = reg;
+			path = "正则表达式分类";
 			sourceTree = "<group>";
 		};
-		2FCFD21E20B10E2B00F94EC5 /* EmojiTool */ = {
+		2FCFD21E20B10E2B00F94EC5 /* 表情工具 */ = {
 			isa = PBXGroup;
 			children = (
 				2FCFD21F20B10E2B00F94EC5 /* YREmojiStringTool.h */,
 				2FCFD22020B10E2B00F94EC5 /* YREmojiStringTool.m */,
 			);
-			path = EmojiTool;
+			path = "表情工具";
+			sourceTree = "<group>";
+		};
+		2FCFD22F20B1638700F94EC5 /* YRLabelDemo */ = {
+			isa = PBXGroup;
+			children = (
+				2FCFD23020B1638700F94EC5 /* YRLabel.h */,
+				2FCFD23120B1638700F94EC5 /* YRLabel.m */,
+				2FCFD23220B1638700F94EC5 /* YRLabelViewController.h */,
+				2FCFD23320B1638700F94EC5 /* YRLabelViewController.m */,
+			);
+			path = YRLabelDemo;
 			sourceTree = "<group>";
 		};
 		2FEAE80E2071F56F00511373 = {
@@ -103,8 +120,9 @@
 			children = (
 				2FEAE81A2071F56F00511373 /* AppDelegate.h */,
 				2FEAE81B2071F56F00511373 /* AppDelegate.m */,
-				2FCFD21E20B10E2B00F94EC5 /* EmojiTool */,
-				2FCFD21420B10DD700F94EC5 /* reg */,
+				2FCFD22F20B1638700F94EC5 /* YRLabelDemo */,
+				2FCFD21E20B10E2B00F94EC5 /* 表情工具 */,
+				2FCFD21420B10DD700F94EC5 /* 正则表达式分类 */,
 				2FF63A9A2097217800ADB2F1 /* 正则入门思想 */,
 				2FEAE81D2071F56F00511373 /* ViewController.h */,
 				2FEAE81E2071F56F00511373 /* ViewController.m */,
@@ -202,6 +220,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2FCFD23520B1638700F94EC5 /* YRLabelViewController.m in Sources */,
 				2FCFD22120B10E2C00F94EC5 /* YREmojiStringTool.m in Sources */,
 				2FCFD21B20B10DD700F94EC5 /* NSString+reg.m in Sources */,
 				2FCFD21320B10B1900F94EC5 /* ViewController+sysReg.m in Sources */,
@@ -211,6 +230,7 @@
 				2FEAE82A2071F56F00511373 /* main.m in Sources */,
 				2FCFD21D20B10DD700F94EC5 /* NSString+validStr.m in Sources */,
 				2FEAE81C2071F56F00511373 /* AppDelegate.m in Sources */,
+				2FCFD23420B1638700F94EC5 /* YRLabel.m in Sources */,
 				2FCFD21020B10B0900F94EC5 /* ViewController+reg.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
