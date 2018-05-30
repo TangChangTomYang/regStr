@@ -10,6 +10,10 @@
 
 @interface NSString (validStr)
 
+
+-(BOOL)isvalid;
+
+
 /** 匹配空格*/
 -(BOOL)isValidSpaceStr;
 

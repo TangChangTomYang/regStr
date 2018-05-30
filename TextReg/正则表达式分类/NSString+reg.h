@@ -32,6 +32,15 @@
 
 
 
+/**
+ 数字 汉子 英文 空格 符号之间最多一个 空格
+ */
+-(NSString *)validStr;
+
+
+//@"^(([\u4e00-\u9fa5]|[0-9]|[a-zA-Z]|[0-9])[\\s]?)*"
+-( NSString  *)subStringWithPattern:(NSString *)regPattern;
+
 
 
 

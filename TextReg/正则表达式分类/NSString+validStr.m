@@ -30,6 +30,16 @@
 
 #pragma mark- 外部方法
 
+
+-(BOOL)isvalid{
+    
+    NSString *regStr =  @"^((([\u4e00-\u9fa5]|[0-9]|[a-zA-Z]|[0-9])+)[\\s]?)+$";
+    return   [self isValidForRegStr:regStr];
+    
+}
+
+
+
 /** 空格*/
 -(BOOL)isValidSpaceStr{
     NSString *regStr = @"^(\\s)+$";

@@ -99,5 +99,49 @@
 }
 
 
+-(NSString *)validStr{
+// 方案1
+//  NSArray *arr = [self subStringArrWithPattern:@"^(([\u4e00-\u9fa5]|[0-9]|[a-zA-Z]|[0-9])[\\s]?)*"];
+//
+//    NSLog(@"-------count %ld----- ",arr.count);
+//    return arr.firstObject;
+    
+// 方案2
+    return  [self subStringWithPattern:@"^(([\u4e00-\u9fa5]|[0-9]|[a-zA-Z]|[0-9])[\\s]?)*"];
+}
+
+
+
+
+
+
+//@"^(([\u4e00-\u9fa5]|[0-9]|[a-zA-Z]|[0-9])[\\s]?)*" 
+-( NSString  *)subStringWithPattern:(NSString *)regPattern{
+    
+    NSError *err = nil;
+    NSRegularExpression *regExp = [[NSRegularExpression alloc]initWithPattern:regPattern options:kNilOptions error:&err];
+    
+    if (err != nil) { 
+        return nil;
+    }
+    
+    
+    NSArray<NSTextCheckingResult *> *resultArr= [regExp matchesInString:self options:kNilOptions range:NSMakeRange(0, self.length)];
+    
+    if (resultArr.count == 0) {
+        return nil;
+    }
+    
+    NSMutableString *strM = [NSMutableString new];
+    
+    for (NSTextCheckingResult *result in resultArr) {
+        NSRange range = [result range];
+        
+        [strM appendString:[self substringWithRange:range]];
+    }
+    return strM;
+}
+
+
 
 @end

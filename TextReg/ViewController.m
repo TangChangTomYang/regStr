@@ -60,7 +60,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self.filed addTarget:self action:@selector(fieldChange) forControlEvents:UIControlEventEditingChanged];
+    //[self.filed addTarget:self action:@selector(fieldChange) forControlEvents:UIControlEventEditingChanged];
 }
 
 -(void)fieldChange{

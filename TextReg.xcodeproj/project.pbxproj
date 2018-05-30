@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		146B129B20BE7EE100AF6391 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B129A20BE7EE100AF6391 /* TextFieldViewController.m */; };
 		2FCFD21020B10B0900F94EC5 /* ViewController+reg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD20F20B10B0900F94EC5 /* ViewController+reg.m */; };
 		2FCFD21320B10B1900F94EC5 /* ViewController+sysReg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21220B10B1900F94EC5 /* ViewController+sysReg.m */; };
 		2FCFD21B20B10DD700F94EC5 /* NSString+reg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21620B10DD700F94EC5 /* NSString+reg.m */; };
@@ -25,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		146B129920BE7EE100AF6391 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
+		146B129A20BE7EE100AF6391 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 		2FCFD20E20B10B0900F94EC5 /* ViewController+reg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+reg.h"; sourceTree = "<group>"; };
 		2FCFD20F20B10B0900F94EC5 /* ViewController+reg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+reg.m"; sourceTree = "<group>"; };
 		2FCFD21120B10B1900F94EC5 /* ViewController+sysReg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+sysReg.h"; sourceTree = "<group>"; };
@@ -130,6 +133,8 @@
 				2FCFD20F20B10B0900F94EC5 /* ViewController+reg.m */,
 				2FCFD21120B10B1900F94EC5 /* ViewController+sysReg.h */,
 				2FCFD21220B10B1900F94EC5 /* ViewController+sysReg.m */,
+				146B129920BE7EE100AF6391 /* TextFieldViewController.h */,
+				146B129A20BE7EE100AF6391 /* TextFieldViewController.m */,
 				2FEAE8202071F56F00511373 /* Main.storyboard */,
 				2FEAE8232071F56F00511373 /* Assets.xcassets */,
 				2FEAE8252071F56F00511373 /* LaunchScreen.storyboard */,
@@ -232,6 +237,7 @@
 				2FEAE81C2071F56F00511373 /* AppDelegate.m in Sources */,
 				2FCFD23420B1638700F94EC5 /* YRLabel.m in Sources */,
 				2FCFD21020B10B0900F94EC5 /* ViewController+reg.m in Sources */,
+				146B129B20BE7EE100AF6391 /* TextFieldViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -372,7 +378,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.360gobuylight.LETTIN3.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d4742443-66fb-40fb-8a67-749a040e1b87";
+				PROVISIONING_PROFILE = "978ba103-8a62-4f76-8bbf-529f211dea85";
 				PROVISIONING_PROFILE_SPECIFIER = lettin3.0_dev1127;
 				SWIFT_OBJC_BRIDGING_HEADER = "TextReg/TextReg-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
