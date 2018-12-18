@@ -7,10 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		143C7DC221C8A5EA00F17A35 /* RGLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C7DC121C8A5E900F17A35 /* RGLocalization.m */; };
+		143C7DC621C8BA1300F17A35 /* NSString+reg.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C7DC421C8BA1300F17A35 /* NSString+reg.m */; };
 		146B129B20BE7EE100AF6391 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B129A20BE7EE100AF6391 /* TextFieldViewController.m */; };
 		2FCFD21020B10B0900F94EC5 /* ViewController+reg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD20F20B10B0900F94EC5 /* ViewController+reg.m */; };
 		2FCFD21320B10B1900F94EC5 /* ViewController+sysReg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21220B10B1900F94EC5 /* ViewController+sysReg.m */; };
-		2FCFD21B20B10DD700F94EC5 /* NSString+reg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21620B10DD700F94EC5 /* NSString+reg.m */; };
 		2FCFD21C20B10DD700F94EC5 /* NSString+sysReg.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21820B10DD700F94EC5 /* NSString+sysReg.m */; };
 		2FCFD21D20B10DD700F94EC5 /* NSString+validStr.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD21A20B10DD700F94EC5 /* NSString+validStr.m */; };
 		2FCFD22120B10E2C00F94EC5 /* YREmojiStringTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FCFD22020B10E2B00F94EC5 /* YREmojiStringTool.m */; };
@@ -26,14 +27,16 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		143C7DC021C8A5E900F17A35 /* RGLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGLocalization.h; sourceTree = "<group>"; };
+		143C7DC121C8A5E900F17A35 /* RGLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGLocalization.m; sourceTree = "<group>"; };
+		143C7DC421C8BA1300F17A35 /* NSString+reg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+reg.m"; sourceTree = "<group>"; };
+		143C7DC521C8BA1300F17A35 /* NSString+reg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+reg.h"; sourceTree = "<group>"; };
 		146B129920BE7EE100AF6391 /* TextFieldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TextFieldViewController.h; sourceTree = "<group>"; };
 		146B129A20BE7EE100AF6391 /* TextFieldViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TextFieldViewController.m; sourceTree = "<group>"; };
 		2FCFD20E20B10B0900F94EC5 /* ViewController+reg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+reg.h"; sourceTree = "<group>"; };
 		2FCFD20F20B10B0900F94EC5 /* ViewController+reg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+reg.m"; sourceTree = "<group>"; };
 		2FCFD21120B10B1900F94EC5 /* ViewController+sysReg.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ViewController+sysReg.h"; sourceTree = "<group>"; };
 		2FCFD21220B10B1900F94EC5 /* ViewController+sysReg.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "ViewController+sysReg.m"; sourceTree = "<group>"; };
-		2FCFD21520B10DD700F94EC5 /* NSString+reg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+reg.h"; sourceTree = "<group>"; };
-		2FCFD21620B10DD700F94EC5 /* NSString+reg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+reg.m"; sourceTree = "<group>"; };
 		2FCFD21720B10DD700F94EC5 /* NSString+sysReg.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+sysReg.h"; sourceTree = "<group>"; };
 		2FCFD21820B10DD700F94EC5 /* NSString+sysReg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+sysReg.m"; sourceTree = "<group>"; };
 		2FCFD21920B10DD700F94EC5 /* NSString+validStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+validStr.h"; sourceTree = "<group>"; };
@@ -69,11 +72,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		143C7DBF21C8A58A00F17A35 /* 国际化比对工具 */ = {
+			isa = PBXGroup;
+			children = (
+				143C7DC021C8A5E900F17A35 /* RGLocalization.h */,
+				143C7DC121C8A5E900F17A35 /* RGLocalization.m */,
+			);
+			path = "国际化比对工具";
+			sourceTree = "<group>";
+		};
 		2FCFD21420B10DD700F94EC5 /* 正则表达式分类 */ = {
 			isa = PBXGroup;
 			children = (
-				2FCFD21520B10DD700F94EC5 /* NSString+reg.h */,
-				2FCFD21620B10DD700F94EC5 /* NSString+reg.m */,
+				143C7DC521C8BA1300F17A35 /* NSString+reg.h */,
+				143C7DC421C8BA1300F17A35 /* NSString+reg.m */,
 				2FCFD21720B10DD700F94EC5 /* NSString+sysReg.h */,
 				2FCFD21820B10DD700F94EC5 /* NSString+sysReg.m */,
 				2FCFD21920B10DD700F94EC5 /* NSString+validStr.h */,
@@ -123,6 +135,7 @@
 			children = (
 				2FEAE81A2071F56F00511373 /* AppDelegate.h */,
 				2FEAE81B2071F56F00511373 /* AppDelegate.m */,
+				143C7DBF21C8A58A00F17A35 /* 国际化比对工具 */,
 				2FCFD22F20B1638700F94EC5 /* YRLabelDemo */,
 				2FCFD21E20B10E2B00F94EC5 /* 表情工具 */,
 				2FCFD21420B10DD700F94EC5 /* 正则表达式分类 */,
@@ -225,13 +238,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				143C7DC621C8BA1300F17A35 /* NSString+reg.m in Sources */,
 				2FCFD23520B1638700F94EC5 /* YRLabelViewController.m in Sources */,
 				2FCFD22120B10E2C00F94EC5 /* YREmojiStringTool.m in Sources */,
-				2FCFD21B20B10DD700F94EC5 /* NSString+reg.m in Sources */,
 				2FCFD21320B10B1900F94EC5 /* ViewController+sysReg.m in Sources */,
 				2FEAE81F2071F56F00511373 /* ViewController.m in Sources */,
 				2FF63A992097214A00ADB2F1 /* MyRegex.swift in Sources */,
 				2FCFD21C20B10DD700F94EC5 /* NSString+sysReg.m in Sources */,
+				143C7DC221C8A5EA00F17A35 /* RGLocalization.m in Sources */,
 				2FEAE82A2071F56F00511373 /* main.m in Sources */,
 				2FCFD21D20B10DD700F94EC5 /* NSString+validStr.m in Sources */,
 				2FEAE81C2071F56F00511373 /* AppDelegate.m in Sources */,
