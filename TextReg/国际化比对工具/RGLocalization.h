@@ -25,5 +25,18 @@
  "Search"="Add";
  */
 +(void)compareRepeatPath:(NSString *)path;
+
+
+/**
+ "china"="中国";
+ "english"="英国";
+ 
+ ==>
+ 
+ "china"="china";
+ "english"="english";
+ */
++(void)replaceValuePath:(NSString *)path toSPath:(NSString *)toPath;
+
 @end
 

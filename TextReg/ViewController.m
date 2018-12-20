@@ -12,6 +12,9 @@
 #import "NSString+validStr.h"
 
 
+#import "RGLocalization.h"
+
+
 
 @interface ViewController ()<UITextFieldDelegate>
 @property (weak, nonatomic) IBOutlet UITextField *filed;
@@ -81,7 +84,13 @@
     
 }
 
-
+-(void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+ 
+//    [RGLocalization compareRepeatPath:@"/Users/yangrui/Desktop/fjile/abc.txt"];
+    
+    
+    [RGLocalization replaceValuePath:@"/Users/yangrui/Desktop/fjile/aaa.txt" toSPath:@"/Users/yangrui/Desktop/fjile/ccc.txt"];
+}
 
 
 @end

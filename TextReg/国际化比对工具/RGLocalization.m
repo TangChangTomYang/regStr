@@ -38,8 +38,7 @@
         NSString *prefixStr = [[arr[i] componentsSeparatedByString:@"="] firstObject];
         [newArrM addObject:prefixStr];
     }
-    
-    NSMutableArray *repeatArrM = [NSMutableArray array];
+     
     for (int a = 0 ; a< newArrM.count ; a++){
         NSString *temA = newArrM[a];
         if (a < newArrM.count - 1) {
@@ -55,5 +54,36 @@
         
     }
 }
+
++(void)replaceValuePath:(NSString *)path toSPath:(NSString *)toPath{
+    NSString *fileStr = [NSString stringWithContentsOfFile:path encoding:NSUTF8StringEncoding error:nil];
     
+    // 将 本地语言一句句的 正则取出来
+    //  "debug"="debug";
+    NSString *pattern = @"[\"]{1}.*[\"]{1}[=]{1}[\"]{1}.*[\"]{1};?";
+    NSArray *arr = [fileStr subStringArrWithPattern:pattern];
+    
+    
+    
+    NSMutableArray *replaceStrArrM = [NSMutableArray array];
+    for(int i = 0; i < arr.count; i++){
+        NSString *prefixStr = [[arr[i] componentsSeparatedByString:@"="] firstObject];
+       
+        NSString *str = [NSString stringWithFormat:@"%@=%@;",prefixStr,prefixStr];
+        [replaceStrArrM addObject:str];
+        
+        
+    }
+    
+    
+    NSMutableString *longStrM = [NSMutableString string];
+    for (int i = 0 ; i < replaceStrArrM.count; i++) {
+        [longStrM appendString:replaceStrArrM[i]];
+        [longStrM appendString:@"\n"];
+    }
+    
+    [longStrM writeToFile:toPath atomically:YES encoding:NSUTF8StringEncoding error:nil];
+  
+}
+
 @end
