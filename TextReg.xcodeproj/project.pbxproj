@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		000EA00B24F8BB3E006AC2D8 /* YRHtmlStrTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 000EA00724F8BB3E006AC2D8 /* YRHtmlStrTool.m */; };
+		000EA00C24F8BB3E006AC2D8 /* YRHtmlViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 000EA00824F8BB3E006AC2D8 /* YRHtmlViewController.m */; };
 		143C7DC221C8A5EA00F17A35 /* RGLocalization.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C7DC121C8A5E900F17A35 /* RGLocalization.m */; };
 		143C7DC621C8BA1300F17A35 /* NSString+reg.m in Sources */ = {isa = PBXBuildFile; fileRef = 143C7DC421C8BA1300F17A35 /* NSString+reg.m */; };
 		146B129B20BE7EE100AF6391 /* TextFieldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 146B129A20BE7EE100AF6391 /* TextFieldViewController.m */; };
@@ -23,10 +25,13 @@
 		2FEAE8242071F56F00511373 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAE8232071F56F00511373 /* Assets.xcassets */; };
 		2FEAE8272071F56F00511373 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2FEAE8252071F56F00511373 /* LaunchScreen.storyboard */; };
 		2FEAE82A2071F56F00511373 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2FEAE8292071F56F00511373 /* main.m */; };
-		2FF63A992097214A00ADB2F1 /* MyRegex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2FF63A982097214A00ADB2F1 /* MyRegex.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		000EA00724F8BB3E006AC2D8 /* YRHtmlStrTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHtmlStrTool.m; sourceTree = "<group>"; };
+		000EA00824F8BB3E006AC2D8 /* YRHtmlViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YRHtmlViewController.m; sourceTree = "<group>"; };
+		000EA00924F8BB3E006AC2D8 /* YRHtmlStrTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHtmlStrTool.h; sourceTree = "<group>"; };
+		000EA00A24F8BB3E006AC2D8 /* YRHtmlViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YRHtmlViewController.h; sourceTree = "<group>"; };
 		143C7DC021C8A5E900F17A35 /* RGLocalization.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RGLocalization.h; sourceTree = "<group>"; };
 		143C7DC121C8A5E900F17A35 /* RGLocalization.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RGLocalization.m; sourceTree = "<group>"; };
 		143C7DC421C8BA1300F17A35 /* NSString+reg.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+reg.m"; sourceTree = "<group>"; };
@@ -72,6 +77,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		000EA00624F8BB3E006AC2D8 /* Html */ = {
+			isa = PBXGroup;
+			children = (
+				000EA00924F8BB3E006AC2D8 /* YRHtmlStrTool.h */,
+				000EA00724F8BB3E006AC2D8 /* YRHtmlStrTool.m */,
+				000EA00A24F8BB3E006AC2D8 /* YRHtmlViewController.h */,
+				000EA00824F8BB3E006AC2D8 /* YRHtmlViewController.m */,
+			);
+			path = Html;
+			sourceTree = "<group>";
+		};
 		143C7DBF21C8A58A00F17A35 /* 国际化比对工具 */ = {
 			isa = PBXGroup;
 			children = (
@@ -135,6 +151,7 @@
 			children = (
 				2FEAE81A2071F56F00511373 /* AppDelegate.h */,
 				2FEAE81B2071F56F00511373 /* AppDelegate.m */,
+				000EA00624F8BB3E006AC2D8 /* Html */,
 				143C7DBF21C8A58A00F17A35 /* 国际化比对工具 */,
 				2FCFD22F20B1638700F94EC5 /* YRLabelDemo */,
 				2FCFD21E20B10E2B00F94EC5 /* 表情工具 */,
@@ -238,12 +255,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				000EA00C24F8BB3E006AC2D8 /* YRHtmlViewController.m in Sources */,
 				143C7DC621C8BA1300F17A35 /* NSString+reg.m in Sources */,
+				000EA00B24F8BB3E006AC2D8 /* YRHtmlStrTool.m in Sources */,
 				2FCFD23520B1638700F94EC5 /* YRLabelViewController.m in Sources */,
 				2FCFD22120B10E2C00F94EC5 /* YREmojiStringTool.m in Sources */,
 				2FCFD21320B10B1900F94EC5 /* ViewController+sysReg.m in Sources */,
 				2FEAE81F2071F56F00511373 /* ViewController.m in Sources */,
-				2FF63A992097214A00ADB2F1 /* MyRegex.swift in Sources */,
 				2FCFD21C20B10DD700F94EC5 /* NSString+sysReg.m in Sources */,
 				143C7DC221C8A5EA00F17A35 /* RGLocalization.m in Sources */,
 				2FEAE82A2071F56F00511373 /* main.m in Sources */,
